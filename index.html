@@ -3,26 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kedai Kersa - Ruang Santai & Nugas Purwokerto</title>
+  <title>Kedai Kersa - Ruang Santai & Nugas Purwokerto Dekat Unsoed</title>
+  <meta name="description" content="Katalog & profil Kedai Kersa Purwokerto dekat Unsoed - tempat ngopi, santai, dan nugas nyaman dengan harga ramah mahasiswa.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a3828' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M18 8h1a4 4 0 0 1 0 8h-1'></path><path d='M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z'></path><line x1='6' y1='1' x2='6' y2='4'></line><line x1='10' y1='1' x2='10' y2='4'></line><line x1='14' y1='1' x2='14' y2='4'></line></svg>">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
 
   <!-- Section 1: Hero & Navbar -->
-  <header id="home">
-    <nav class="navbar">
-      <div class="logo">Kedai Kersa</div>
-      <ul class="nav-links">
-        <li><a href="#home">Beranda</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
+  <header id="home" class="header-hero">
+    <nav class="navbar" id="navbar" aria-label="Navigasi Utama">
+      <div class="nav-container">
+        <a href="#home" class="logo" aria-label="Kedai Kersa Beranda">
+          <span class="logo-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </span>
+          <span class="logo-text">
+            <span class="logo-title">Kedai Kersa</span>
+            <span class="logo-subtitle">Purwokerto</span>
+          </span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+          <li class="mobile-cta-item">
+            <a href="#menu" class="btn btn-primary btn-sm mobile-cta">Lihat Menu</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#menu" class="btn btn-primary btn-sm nav-cta">Lihat Menu</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
     </nav>
+
     <section class="hero">
-      <h1>Ruang Santai & Rasa Sahabat</h1>
-      <p>Pilihan minuman segar, camilan lezat, colokan melimpah, dan harga ramah mahasiswa.</p>
-      <a href="#menu" class="btn">Lihat Menu Kedai</a>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span> Spot Santai & Nugas Dekat Unsoed
+          </div>
+          <h1 class="hero-title">Seduhan Kopi Hangat, Ruang Tenang untuk Setiap Cerita & Tugasmu</h1>
+          <p class="hero-desc">
+            Hadir di Purwokerto sebagai ruang singgah yang nyaman bagi mahasiswa dan warga lokal. Nikmati seduhan kopi pilihan, camilan lezat, colokan melimpah di setiap sudut, dan Wi-Fi stabil dengan harga yang bersahabat.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary hero-btn">
+              <span>Lihat Menu Kedai</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-outline hero-btn">Tentang Kami</a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon" aria-hidden="true">⚡</span>
+              <span>Banyak Colokan & Wi-Fi Kencang</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon" aria-hidden="true">🎓</span>
+              <span>Dekat Kampus Unsoed Purwokerto</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon" aria-hidden="true">🏷️</span>
+              <span>Harga Ramah Mahasiswa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" alt="Suasana hangat dan santai di Kedai Kersa Purwokerto" class="hero-image" loading="eager">
+            <div class="visual-overlay" aria-hidden="true"></div>
+            <div class="visual-badge badge-top">
+              <span class="badge-icon" aria-hidden="true">⭐</span>
+              <div>
+                <strong>4.9 / 5.0</strong>
+                <small>Favorit Mahasiswa</small>
+              </div>
+            </div>
+            <div class="visual-badge badge-bottom">
+              <span class="badge-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Purwokerto</strong>
+                <small>Dekat Kampus Unsoed</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </header>
 
